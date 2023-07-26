@@ -69,6 +69,7 @@ public class Person implements Comparable<Person> {
 
     @Override
     public int compareTo(Person o) {
-        return o.id > id ? o.id : id;
+
+        return Integer.compare(this.id, o.id);
     }
 }
